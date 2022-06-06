@@ -1,3 +1,5 @@
+
+
 int valorldr = 0;
 int pinoLed = 3;
 float valorPO = 0;
@@ -13,7 +15,7 @@ void loop(){
     valorldr = analogRead(A1); // LE O VALOR DO LDR
     valorldr = constrain(valorldr, 0, 200); // DELIMITA OS VALORES DO LDR
     valorPO = constrain(valorPO, 0, 200); // DELIMITA OS VALORES DO POTENCIOMETRO
-    valorldr = map(valorldr, 0,200,200,0); // INVERTE OS VALORES DO LDR PARA ASCENDER A LED QUANDO ESCURO
+    valorldr = map(valorldr, 0,200,200,0); // INVERTE OS VALORES DO LDR PARA ACENDER A LED QUANDO ESCURO
     analogWrite(pinoLed, valorldr); // PASSA O VALOR LDR PARA O LED 
     Serial.println(valorPO); // MOSTRA O VALOR DO POTENCIOMETRO
     delay(200);
@@ -21,11 +23,7 @@ void loop(){
     if (valorldr > 150) {
       delay(temp); 
       
-      }
-    
-    
-    
-    
+      } 
     
     }
   
