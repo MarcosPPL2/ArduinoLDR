@@ -5,7 +5,7 @@ int pinoLed = 3;
 float valorPO = 0;
 int temp = 0;
 void setup() {   
-   pinMode(A1, INPUT); // ENTRADA ANALOGICA LDR
+   pinMode(A0, INPUT); // ENTRADA ANALOGICA LDR
    Serial.begin(9600);
    pinMode(3, OUTPUT); // SAIDA LED DIGITAL
    pinMode(A4, INPUT); // ENTRADA ANALOGICA POTENCIOMETRO 
